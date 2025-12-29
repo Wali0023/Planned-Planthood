@@ -241,3 +241,11 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
     margin-inline:auto;  
   }
 }
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-neutral-100);
+}
+.page-navigation{
+  
+}
