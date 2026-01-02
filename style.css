@@ -235,17 +235,28 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
   white-space: nowrap;
   width: 1px;
 }
-.wrapper{
-  @media (width > 992px) {
-    inline-size: 40vw;
-    margin-inline:auto;  
-  }
-}
+
 header{
-  display: flex;
-  justify-content: space-between;
   background-color: var(--clr-neutral-100);
+  padding-block:10px;
+}
+.hd-flex{
+    display:flex;
+    justify-content: space-between;
+}
+.green-logo-text{
+  color:var(--clr-green-400);
+  font-weight: var(--fw-semi-bold);
+  letter-spacing: -1px;
+  line-height: 12px;
 }
 .page-navigation{
-  
+  display:flex;
+  justify-content: space-between;
+  gap:30px;
+  color:var(--clr-green-400);
+  font-weight: var(--fw-semi-bold);
 }
+nav> ul >li{
+  list-style: none;
+} 
