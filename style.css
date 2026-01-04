@@ -309,7 +309,34 @@ nav> ul >li{
     .dual-pic .picture{
       inline-size: 50%;
       block-size: 300px;
-    }
-    
+    }  
   }
+}
+footer{
+  background-color: var(--clr-green-900);
+  color:aliceblue;
+}
+.middle-banner{
+  background-color: white;
+  margin-bottom: 100px;
+}
+
+/*** Card ***/
+.card-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap:2rem;
+}
+.card{
+  inline-size: 243px;
+  block-size: 534px;
+  img{
+    display: block;
+    object-fit: cover;
+    inline-size:100%;
+  }
+}
+
+.gallery h2{
+  text-align: center;
 }
