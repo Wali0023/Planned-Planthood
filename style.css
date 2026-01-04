@@ -335,7 +335,7 @@ footer{
   gap:2rem;
 }
 .card{
-  inline-size: 275px;
+  inline-size: 250px;
   block-size: 534px;
   img{
     display: block;
@@ -351,5 +351,48 @@ footer{
   border-radius: 1000px;
   display: inline-block;
   margin-block:5px;
-  padding: 1px 10px 4px;
+  padding-inline:10px;
+  padding-bottom: 4px;
+}
+.text-white{
+  color: white;
+}
+.text-upper{
+  text-transform: uppercase;
+}
+.background-orange{
+  background-color:var(--clr-sunloving);
+}
+.background-flower{
+  background-color:var(--clr-flower);
+}
+.background-edible{
+  background-color:var(--clr-edible);
+}
+.background-easy{
+  background-color:var(--clr-easy);
+}
+.background-decorative{
+  background-color:var(--clr-decorative);
+}
+.background-colorful{
+  background-color:var(--clr-colorful);
+}
+.background-robust{
+  background-color:var(--clr-robust);
+}
+.background-fast{
+  background-color:var(--clr-fast);
+}
+.background-green{
+  background-color: var(--clr-green);
+}
+.background-air{
+  background-color: var(--clr-air);
+}
+.text-small{
+  font-size: var(--fs-200);
+}
+.text-semi-bold{
+  font-weight: var(--fw-semi-bold);
 }
