@@ -269,13 +269,11 @@ nav> ul >li{
  }
 }
 .picture{
-  min-inline-size:200px;
-  block-size:200px;
   display:block;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  @media (min-width:600px) {
+  @media (min-width:992px) {
     inline-size: 100%;
-    block-size: 300px;
     }
 }
 .dual-pic{
@@ -287,15 +285,14 @@ nav> ul >li{
   grid-template-columns: 1fr 1fr ;
   margin-inline:auto;
   max-inline-size: 400px;
+  padding: 10px;
+  box-shadow: var(--border-shadow);
   @media (min-width:600px) {
     grid-template-columns: 1fr 1fr 1fr;
     max-inline-size: 900px;
   }
   @media (min-width: 992px){
     max-inline-size: 100%;
-    align-items: start;
-    padding: 10px;
-    box-shadow: var(--border-shadow);
     .picture:first-child{
       grid-column: 1;
       grid-row:1/span 2;
@@ -335,6 +332,7 @@ footer{
 .card-grid{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-items: center;
   gap:2rem;
 }
 .card{
