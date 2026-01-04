@@ -317,8 +317,18 @@ footer{
   color:aliceblue;
 }
 .middle-banner{
+  display:grid;
+  place-items: center;
+  text-align: center;
   background-color: white;
   margin-bottom: 100px;
+}
+.round-green{
+  inline-size: 150px;
+  block-size: 150px;
+  margin-top: 2rem;
+  background-color: var(--clr-accent);
+  border-radius:50%;
 }
 
 /*** Card ***/
