@@ -335,7 +335,7 @@ footer{
   gap:2rem;
 }
 .card{
-  inline-size: 243px;
+  inline-size: 275px;
   block-size: 534px;
   img{
     display: block;
@@ -346,4 +346,10 @@ footer{
 
 .gallery h2{
   text-align: center;
+}
+.pill-shape{
+  border-radius: 1000px;
+  display: inline-block;
+  margin-block:5px;
+  padding: 1px 10px 4px;
 }
