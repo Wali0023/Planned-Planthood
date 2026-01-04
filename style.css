@@ -294,10 +294,12 @@ header{
   padding-block:10px;
 }
 .hd-flex{
-  @media(min-width: 600px){
     display:flex;
     justify-content: space-between;
-  }
+}
+.logo{
+  display: flex;
+  align-items: center;
 }
 .green-logo-text{
   color:var(--clr-green-400);
@@ -382,6 +384,9 @@ nav> ul >li{
   block-size: 200px;
   background-color: var(--clr-accent);
   border-radius:50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*** Card ***/
@@ -408,5 +413,51 @@ nav> ul >li{
 }
 
 strong{
-font-weight: var(--fw-semi-bold);  
+  font-weight: var(--fw-semi-bold);  
+}
+/*** SVG ***/
+.sprite-logo{
+  width: 40px;
+  height:40px;
+  stroke: var(--clr-green);
+  stroke-width: 12;
+  fill:white;
+}
+.round{
+  border-radius: 50%;
+  background-color: var(--clr-neutral-200);
+  width: 50px;
+  height: 50px;
+  border: black 1px solid;
+  overflow: hidden;
+
+}
+.sprite-icon-avatar{
+  fill:black;
+  width:60px;
+  height:60px;
+}
+.sprite-planting{
+  width: 100px;
+  height: auto;
+  color: white; 
+  stroke-width: 0.2px; 
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+.sprite-menu{
+  width:20px;
+  height:32px; 
+  stroke-width:2; 
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  @media(min-width:600px){
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 }
