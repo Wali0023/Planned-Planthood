@@ -613,3 +613,13 @@ strong{
   border:1px solid var(--clr-accent);
   text-decoration: none;
 }
+.image-container{
+  position: relative;
+}
+.sprite-water-mark{
+  color: white;
+  fill:none;
+  position: absolute;
+  bottom:70px;
+  opacity: 0.5;
+}
