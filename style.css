@@ -303,6 +303,9 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
 }
 .text-small{
   font-size: var(--fs-100);
+  @media(min-width: 600px){
+    font-size: var(--fs-200);
+  }
 }
 .text-semi-bold{
   font-weight: var(--fw-semi-bold);
@@ -331,15 +334,23 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
 .spacing-lg{
   padding-block:var(--flow-space)
 }
+.margin-vertical{
+ margin-block:20px;
+}
+.margin-vertical-small-screen{
+   @media (max-width:600px) {
+    margin-block: 20px;
+  }
+}
+.margin-vertical-sm{
+  margin-block:10px;
+}
 /*** Header ***/
 header{
   background-color: var(--clr-neutral-100);
   nav{
     display: flex;
   }
-}
-.logo{
-  margin-block:10px;
 }
 .green-logo-text{
   color:var(--clr-accent);
@@ -460,7 +471,7 @@ header{
     
   }
 }
-.round-green{
+.green-circle{
   inline-size: 200px;
   block-size: 200px;
   background-color: var(--clr-accent);
@@ -496,9 +507,7 @@ header{
   }
  }
 }
-.margin-vertical{
- margin-block:20px;
-}
+
 /*** Card ***/
 .card-grid{
   display:grid;
@@ -518,6 +527,12 @@ header{
     display: block;
     object-fit: cover;
     inline-size:100%;
+  }
+  header{
+    block-size: 60px;
+  }
+  p{
+    margin-top: auto;
   }
   footer{
     margin-top: auto;
@@ -591,6 +606,7 @@ strong{
   
   }
 }
+
 .pill-button:hover{
   background-color: white;
   color: var(--clr-accent);
