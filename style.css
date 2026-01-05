@@ -371,7 +371,8 @@ header{
     a{
       display: flex;
       align-items: center;
-      &:hover{
+      &:hover,
+      &:focus-visible{
         block-size: 100%;
         background-color:var(--clr-accent);
         color:white;
@@ -591,7 +592,8 @@ strong{
   stroke-width:2; 
   stroke-linecap:round;
   stroke-linejoin:round;
-  &:hover{
+  &:hover,
+  &:focus-visible{
     background-color:var(--clr-accent) ;
     color:white;
   }
@@ -607,7 +609,8 @@ strong{
   }
 }
 
-.pill-button:hover{
+.pill-button:hover,
+.pill-button:focus-visible{
   background-color: white;
   color: var(--clr-accent);
   border:1px solid var(--clr-accent);
