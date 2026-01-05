@@ -18,10 +18,10 @@
                         <svg class="sprite-menu"><use href="assets/images/sprite.svg#menu"></use></svg>
                         
                         <ul class="page-navigation visually-hidden-small-screen">
-                            <li><a>Hem</a></li>
-                            <li><a>Historik</a></li>
-                            <li><a>Tips</a></li>
-                            <li><a>Kontakt</a></li>
+                            <li><a href="#">Hem</a></li>
+                            <li><a href="#">Historik</a></li>
+                            <li><a href="#">Tips</a></li>
+                            <li><a href="#">Kontakt</a></li>
                         </ul> 
                     </nav> 
                 </div>
@@ -48,21 +48,23 @@
                     </div>
                 </section>
                 
-                <section class="middle-banner flow-sm fullwidth spacing background-white">
-                    <div class="round-green">
+                <section class="middle-banner flow-sm fullwidth spacing background-white flex-reverse-larger-screen spacing-lg">
+                    <div class="round-green ">
                          <svg class=" sprite-planting"><use href="assets/images/sprite.svg#icon-planting"></use></svg>
                     </div>
-                    <h2>
-                        Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!
-                    </h2>
-                    <form class="signup-form pill-shape background-white" method="POST">
-                        <label for="user-email" class=" visually-hidden">email </label>
-                        <input class="email-input background-white pill"type="text" id="user-email" name="email" placeholder="name@domain.se" required>
-                        <input type="submit" class="pill-shape background-accent text-white text-spacing" >
-                    </form>
+                    <div class="cta margin-vertical">
+                        <h2 class="margin-vertical">
+                            Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!
+                        </h2>
+                        <form class="signup-form pill-shape background-white" method="POST">
+                            <label for="user-email" class=" visually-hidden">email </label>
+                            <input class="email-input background-white pill"type="text" id="user-email" name="email" placeholder="name@domain.se" required>
+                            <input type="submit" class="pill-shape background-accent text-white text-spacing" >
+                        </form>
+                    </div>
                 </section>
                 
-                <section class="flow gallery">
+                <section class="gallery flow ">
                     <h2>Alla våra växter</h2>
                     <div class="card-grid">
                         
@@ -330,46 +332,48 @@
                                     </div>
                                 </footer>
                             </div>
-</article>
+                        </article>
                         </div>
                     </section>
                     
-                    <section class="middle-banner fullwidth flow spacing flow background-white">
-                        <div class="round-green">
+                    <section class="middle-banner fullwidth flow spacing flow background-white flex-larger-screen spacing-lg">
+                        <div class="round-green ">
                             <svg class="sprite-planting"><use href="assets/images/sprite.svg#icon-planting"></use></svg>
                         </div>
-                        <h2>
-                            Våra tidigare odlingar
-                            
-                        </h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis. Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat doloribus?
-                        </p>
-                        <a class="pill-shape background-accent text-white text-spacing ">
-                            Planterade plantor
-                        </a>
+                        <div class="cta flow-sm">
+                            <h2 >
+                                Våra tidigare odlingar
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis. Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat doloribus?
+                            </p>
+                            <a class="pill-shape background-accent text-white text-spacing ">
+                                Planterade plantor
+                            </a>
+                        </div>
                     </section>
                 </main>
                 
                 <footer class="content-grid background-accent text-white">
                     <div class="flex-between">
-                        <div class="flow spacing">
+                        <div class="footer-description flow spacing">
                             <h2>Om oss</h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam ducimus aut sint atque ullam alias perspiciatis fuga. Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius molestias?</p>
-                        <div>
-                            <p><strong>Telefon: 020-1234567</strong></p>
-                            <p><strong>E-post: info@plannedplant.com</strong></p>
+                            <div>
+                                <p><strong>Telefon: 020-1234567</strong></p>
+                                <p><strong>E-post: info@plannedplant.com</strong></p>
+                            </div>
                         </div>
+
+                            <nav class="footer-navigation visually-hidden-small-screen ">
+                                <ul class="flow spacing-lg">
+                                    <li><a href="#">Hem</a></li>
+                                    <li><a href="#">Historik</a></li>
+                                    <li><a href="#">Tips</a></li>
+                                    <li><a href="#">Kontakt</a></li>
+                                </ul>
+                            </nav>
                     </div>
-                    <nav class="visually-hidden-small-screen">
-                        <ul>
-                            <li>Hem</li>
-                            <li>Historik</li>
-                            <li>Tips</li>
-                            <li>Kontakt</li>
-                        </ul>
-                    </nav>
-                </div>
-            </footer>
-    </body>
+                </footer>
+        </body>
     </html>
