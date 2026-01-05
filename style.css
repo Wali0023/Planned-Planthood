@@ -364,6 +364,7 @@ header{
         block-size: 100%;
         background-color:var(--clr-accent);
         color:white;
+        text-decoration: none;
       }
     
     }
@@ -589,4 +590,10 @@ strong{
     width: 1px;
   
   }
+}
+.pill-button:hover{
+  background-color: white;
+  color: var(--clr-accent);
+  border:1px solid var(--clr-accent);
+  text-decoration: none;
 }
