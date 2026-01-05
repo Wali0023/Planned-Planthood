@@ -230,6 +230,16 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
 /*** Utilities ***/
 
 .visually-hidden {
+  clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  
+}
+.visually-hidden-small-screen{
   @media(max-width:600px){
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
@@ -251,6 +261,10 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
 }
 .text-upper{
   text-transform: uppercase;
+}
+.background-white{
+  background-color:var(--clr-neutral-100);
+
 }
 .background-orange{
   background-color:var(--clr-sunloving);
@@ -405,7 +419,7 @@ header{
   display:grid;
   place-items: center;
   text-align: center;
-  background-color: white;
+
 }
 .round-green{
   inline-size: 200px;
@@ -417,6 +431,23 @@ header{
   justify-content: center;
 }
 
+/*** Banner ***/
+.signup-form{
+  border:1px black solid;
+  padding-top:2px;
+  input{
+    transform: translateX(4px);
+  }
+}
+.email-input{
+  border: none;
+  color:black;
+  text-align: center;
+  &:focus{
+    outline: none;
+  }
+
+}
 /*** Card ***/
 .card-grid{
   display:grid;

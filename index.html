@@ -17,7 +17,7 @@
                     <nav>
                         <svg class="sprite-menu"><use href="assets/images/sprite.svg#menu"></use></svg>
                         
-                        <ul class="page-navigation visually-hidden">
+                        <ul class="page-navigation visually-hidden-small-screen">
                             <li><a>Hem</a></li>
                             <li><a>Historik</a></li>
                             <li><a>Tips</a></li>
@@ -48,17 +48,18 @@
                     </div>
                 </section>
                 
-                <section class="middle-banner flow fullwidth spacing">
+                <section class="middle-banner flow-sm fullwidth spacing background-white">
                     <div class="round-green">
                          <svg class=" sprite-planting"><use href="assets/images/sprite.svg#icon-planting"></use></svg>
                     </div>
                     <h2>
                         Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!
                     </h2>
-                    <a class="pill-shape background-accent text-white text-spacing">
-                        Skicka
-                    </a>
-                    
+                    <form class="signup-form pill-shape background-white" method="POST">
+                        <label for="user-email" class=" visually-hidden">email </label>
+                        <input class="email-input background-white pill"type="text" id="user-email" name="email" placeholder="name@domain.se" required>
+                        <input type="submit" class="pill-shape background-accent text-white text-spacing" >
+                    </form>
                 </section>
                 
                 <section class="flow gallery">
@@ -333,7 +334,7 @@
                         </div>
                     </section>
                     
-                    <section class="middle-banner fullwidth flow spacing flow">
+                    <section class="middle-banner fullwidth flow spacing flow background-white">
                         <div class="round-green">
                             <svg class="sprite-planting"><use href="assets/images/sprite.svg#icon-planting"></use></svg>
                         </div>
@@ -360,7 +361,7 @@
                             <p><strong>E-post: info@plannedplant.com</strong></p>
                         </div>
                     </div>
-                    <nav class="visually-hidden">
+                    <nav class="visually-hidden-small-screen">
                         <ul>
                             <li>Hem</li>
                             <li>Historik</li>
